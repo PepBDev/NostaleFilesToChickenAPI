@@ -10,8 +10,7 @@ namespace NostaleFilesToChickenAPI.ItemParser
     {
         public string[] getBlocks(string path)
         {
-            string allText = File.ReadAllText(path);
-            string[] blocks = allText.Split(new string[] { "#========================================================" }, StringSplitOptions.None);
+            string[] blocks = File.ReadAllText(path).Split(new string[] { "#========================================================" }, StringSplitOptions.None);
             return blocks;
         }
         public Dictionary<string, string[]> getValues(string block)
