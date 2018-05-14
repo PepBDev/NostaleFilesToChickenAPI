@@ -68,7 +68,7 @@ namespace NostaleFilesToChickenAPI.ItemParser
                 //DefenceDodge = 1,
                 //DistanceDefence = 1,
                 //DistanceDefenceDodge = 1,
-                Effect =  Convert.ToInt16(dictionary["INDEX"][5]),
+                Effect = Convert.ToInt16(dictionary["INDEX"][5]),
                 //EffectValue = 1,
                 //Element = 1,
                 //ElementRate = 1,
@@ -132,5 +132,6 @@ namespace NostaleFilesToChickenAPI.ItemParser
                 //Width = 1,
                 Id = Convert.ToInt64(dictionary["VNUM"][0])
             };
+        }
     }
 }
