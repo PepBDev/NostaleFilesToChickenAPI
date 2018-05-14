@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Reference Include="ChickenAPI">
-      <HintPath>..\..\..\..\..\Desktop\ChickenAPI-master\src\ChickenAPI\bin\Debug\netstandard2.0\ChickenAPI.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\Projects\Nos\ChickenAPI\src\ChickenAPI\bin\Release\netstandard2.0\ChickenAPI.dll</HintPath>
     </Reference>
   </ItemGroup>
 

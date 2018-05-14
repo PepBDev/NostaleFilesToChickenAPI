@@ -25,12 +25,11 @@ namespace NostaleFilesToChickenAPI
                 dictionary = Parser.getValues(block);
                 if (dictionary.ContainsKey("VNUM"))
                 {
-                    string[] test = dictionary["VNUM"];
-                    Console.Write("VNUM: " + String.Join("  ", dictionary["VNUM"]) + "\n");
+                    Parser.fillDto(dictionary);
                 }
                 else
                 {
-                    Console.Write("All VNUMS parsed");
+                    Console.Write("All sent to de DTO");
                 }
             }
 
