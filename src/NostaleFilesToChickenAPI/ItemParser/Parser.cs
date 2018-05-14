@@ -17,11 +17,9 @@ namespace NostaleFilesToChickenAPI.ItemParser
         public Dictionary<string, string[]> getValues(string block)
         {
             Dictionary<string, string[]> dictionary = new Dictionary<string, string[]>();
-            string[] fields = Regex.Split(block, "\t");
-            var foos = new List<string>(fields);
+            var foos = new List<string>(Regex.Split(block, "\t"));
             foos.RemoveAt(0);
-            string text = String.Join("\t", foos.ToArray());
-            string[] values = Regex.Split(text, "\r");
+            string[] values = Regex.Split(String.Join("\t", foos.ToArray()), "\r");
             values = values.Take(values.Count() - 1).ToArray();
             foreach (string value in values)
             {
